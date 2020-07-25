@@ -1,0 +1,17 @@
+{
+  "name": "dawidpotocki.com",
+  "version": "0.1.0",
+  "scripts": {
+    "build": "JEKYLL_ENV=production NODE_ENV=production bundle exec jekyll build",
+    "build-dev": "bundle exec jekyll serve --livereload --incremental"
+  },
+  "author": "Dawid Potocki <dawid@dawidpotocki.com>",
+  "license": "ISC",
+  "private": true,
+  "dependencies": {
+    "postcss": "^7.0.32",
+    "postcss-cli": "^7.1.1",
+    "tailwindcss": "^1.5.2",
+    "typeface-roboto": "^0.0.75"
+  }
+}

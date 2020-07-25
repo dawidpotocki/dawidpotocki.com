@@ -1,0 +1,18 @@
+<nav class="bg-gray-700">
+  <div class="flex flex-wrap md:flex-no-wrap justify-between md:justify-start max-w-5xl px-6 py-2 mx-auto">
+    <a class="nav-link font-bold ml-0" href="/">{{ site.author }}</a>
+
+    <input id="hamburger" class="hidden" type="checkbox" />
+    <label for="hamburger" class="nav-link md:hidden" aria-controls="nav-links">Menu</label>
+
+    <div id="nav-links" class="flex flex-col md:flex-row justify-between w-full">
+      <div id="nav-left" class="hidden flex-col md:flex md:flex-row">
+        <a class="nav-link" href="/accounts/">Accounts and Keys</a>
+        <a class="nav-link" href="/hardware/">Hardware</a>
+      </div>
+      <div id="nav-right" class="hidden flex-col md:flex md:flex-row -mr-2">
+        <a class="nav-link" href="https://github.com/dawidpotocki/dawidpotocki.com/">Source</a>
+      </div>
+    </div>
+  </div>
+</nav>

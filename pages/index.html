@@ -1,0 +1,53 @@
+---
+permalink: /
+layout: default
+pagination:
+  enabled: true
+---
+
+{% if paginator.page == 1 %}
+  <div class="card rounded-b-none sm:rounded-bl">
+    <em title="One way to say hello in Polish">Serwus</em>,
+    I'm Dawid Potocki and this is my boring site. I'm from
+    <span class="whitespace-no-wrap"><img class="w-4 inline-block" src="/assets/img/flags/pl.svg" /> Poland</span>,
+    but currently live in
+    <span class="whitespace-no-wrap"><img class="w-4 inline-block" src="/assets/img/flags/nz.svg" /> New Zealand</span>.
+    I'm a student interested in software development.
+  </div>
+
+  <div class="sm:flex justify-end mb-10 sm:-mb-4">
+    <a class="btn bg-orange-900 hover:bg-orange-800 rounded-t-none flex justify-center px-6" href="/feed.xml">
+      <img class="inline w-5 mr-2" src="/assets/img/layout/rss.svg" />
+      Atom feed
+    </a>
+  </div>
+{% endif %}
+
+
+{% for post in paginator.posts %}
+  <div class="my-6">
+    <span class="text-muted text-lg mr-2">{{ post.date | date: "%Y-%m-%d" }}</span>
+    <a class="text-lg" href="{{ post.url }}">{{ post.title }}</a>
+    {{ post.excerpt }}
+  </div>
+{% endfor %}
+
+
+{% if paginator.total_pages > 1 %}
+  <div class="flex mt-6 lg:mb-6">
+    {% if paginator.previous_page %}
+      <a
+        class="btn bg-blue-900 hover:bg-blue-800"
+        href="{{ paginator.previous_page_path | prepend: site.baseurl }}">
+        &lt; Page {{ paginator.previous_page }}
+      </a>
+    {% endif %}
+    {% if paginator.next_page %}
+      <a
+        class="btn bg-blue-900 hover:bg-blue-800 ml-auto"
+        href="{{ paginator.next_page_path | prepend: site.baseurl }}">
+        Page {{ paginator.next_page }} &gt;
+      </a>
+    {% endif %}
+  </div>
+{% endif %}

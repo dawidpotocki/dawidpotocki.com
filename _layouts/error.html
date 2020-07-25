@@ -1,0 +1,15 @@
+---
+layout: default
+kaomoji: ¯\_(ツ)_/¯
+---
+
+<div class="text-center">
+  <h1 class="text-8xl">
+    {% unless page.kaomoji %}
+      ¯\_(ツ)_/¯
+    {% else %}
+      {{ page.kaomoji }}
+    {% endunless %}
+  </h1>
+  <h1 class="mt-0">{{ page.html_title }} ({{ page.error_message }})</h1>
+</div>

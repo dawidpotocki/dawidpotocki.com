@@ -1,0 +1,44 @@
+name: Dawid Potocki's Blog
+author: Dawid Potocki
+
+domain: dawidpotocki.com
+url: https://dawidpotocki.com
+imap_domain: mail.dawidpotocki.com
+smtp_domain: mail.dawidpotocki.com
+personal_mail:
+  - "&#100;&#97;&#119;&#105;&#100;"
+  - "&#64;"
+  - "&#100;&#97;&#119;&#105;&#100;&#112;&#111;&#116;&#111;&#99;&#107;&#105;"
+  - ".&#99;&#111;&#109;"
+
+
+include:
+  - .well-known
+
+exclude:
+  - README.md
+  - package-lock.json
+  - package.json
+  - postcss.config.js
+  - tailwind.config.js
+  - yarn.lock
+
+plugins:
+  - jekyll-postcss
+  - jekyll-paginate-v2
+
+pagination:
+  enabled: true
+  debug: false
+  collection: "posts"
+  per_page: 8
+  permalink: "/page/:num/"
+  title: "Page :num "
+  limit: 0
+  sort_field: "date"
+  sort_reverse: true
+  category: "posts"
+
+sass:
+  style: compressed
+  sass_dir: ./assets/css

@@ -1,0 +1,80 @@
+---
+---
+
+@import "_font";
+
+@tailwind base;
+
+
+body { @apply overflow-x-hidden; }
+a, .a { @apply text-blue-400 cursor-pointer; }
+h1 { @apply text-5xl; }
+h2 { @apply text-4xl; }
+h3 { @apply text-3xl; }
+h4 { @apply text-2xl; }
+h5 { @apply text-xl; }
+h6 { @apply text-lg; }
+h1,h2,h3,h4,h5,h6 { @apply font-medium mt-2; }
+
+*, ::before, ::after { @apply border-gray-500; }
+:target { @apply bg-gray-700; }
+
+body {
+  font-family: Roboto, sans-serif, "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+
+/*
+ * Layout
+ */
+
+#container {
+  display: grid;
+  grid-gap: 0 2rem;
+  grid-template-columns: minmax(1px, 1fr);
+}
+#main { grid-row: 1/2; }
+#aside { grid-row: 2/3; }
+
+@screen md {
+  #container {
+    grid-template-columns: minmax(1px, 1fr) 220px;
+  }
+
+  #main {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  #aside {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #hamburger:checked ~ #nav-links > #nav-left,
+  #hamburger:checked ~ #nav-links > #nav-right {
+    display: flex;
+  }
+}
+
+
+/*
+ * Components
+ */
+
+.btn { @apply text-gray-100 rounded no-underline select-none px-3 py-1; }
+.card { @apply bg-gray-700 rounded p-4; }
+.nav-link {
+  @apply text-gray-100 no-underline select-none whitespace-no-wrap mx-0 my-1;
+  @screen md { @apply mx-2; }
+}
+
+
+/*
+ * Utilities
+ */
+
+@tailwind utilities;
+.text-muted { @apply text-gray-300; }

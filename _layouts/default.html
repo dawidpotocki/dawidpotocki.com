@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="me" href="https://social.privacytools.io/@dawidpotocki">
+    <link href="/assets/css/main.css" rel="stylesheet" />
+    <title>
+      {% if page.html_title %}
+        {{ page.html_title }} |
+      {% elsif page.title %}
+        {{ page.title }} |
+      {% endif %}
+      {{ site.author }}
+    </title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png?v=1">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png?v=1">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png?v=1">
+    <link rel="manifest" href="/assets/img/favicon/site.webmanifest?v=1">
+    <link rel="mask-icon" href="/assets/img/favicon/safari-pinned-tab.svg?v=1" color="#966bab">
+    <link rel="shortcut icon" href="/favicon.ico?v=1">
+    <meta name="msapplication-TileColor" content="#966bab">
+    <meta name="theme-color" content="#15191e">
+    <link rel="alternate" type="application/atom+xml" title="Atom feed" href="/feed.xml" />
+  </head>
+
+  <body class="bg-gray-900 text-gray-100 h-full">
+    {% include nav.html %}
+    <div id="container" class="p-6 max-w-5xl mx-auto">
+      <main id="main" class="max-w-5xl">
+        {% if page.title %}
+          <h1 class="-mt-2">{{ page.title }}</h1>
+        {% endif %}
+        {{ content }}
+      </main>
+      {% include aside.html %}
+    </div>
+
+    <div
+      id="clipboard"
+      class="bg-gray-700 rounded-lg shadow-lg invisible opacity-0 fixed p-3 m-6 bottom-0 right-0 transition duration-700">
+      Copied to clipboard!
+    </div>
+
+    <a class="hidden" data-jslicense="1" href="/librejs"></a>
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>
