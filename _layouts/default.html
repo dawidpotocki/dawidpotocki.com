@@ -1,18 +1,10 @@
 <!DOCTYPE html>
-<html class="h-full">
+<html class="h-full" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="me" href="https://social.privacytools.io/@dawidpotocki">
     <link href="/assets/css/main.css" rel="stylesheet" />
-    <title>
-      {% if page.html_title %}
-        {{ page.html_title }} |
-      {% elsif page.title %}
-        {{ page.title }} |
-      {% endif %}
-      {{ site.author }}
-    </title>
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png?v=1">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png?v=1">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png?v=1">
@@ -22,6 +14,7 @@
     <meta name="msapplication-TileColor" content="#966bab">
     <meta name="theme-color" content="#15191e">
     <link rel="alternate" type="application/atom+xml" title="Atom feed" href="/feed.xml" />
+    {% seo %}
   </head>
 
   <body class="bg-gray-900 text-gray-100 h-full">
