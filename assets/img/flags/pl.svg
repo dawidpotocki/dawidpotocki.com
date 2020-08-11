@@ -1,6 +1,2 @@
-<svg xmlns="http://www.w3.org/2000/svg" height="480" width="640" version="1">
-  <g fill-rule="evenodd">
-    <path fill="#fff" d="M640 480H0V0h640z"/>
-    <path fill="#dc143c" d="M640 480H0V240h640z"/>
-  </g>
-</svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Flag of Poland" width="1280" height="800" version="1.1" viewBox="0 0 16 10" xmlns="http://www.w3.org/2000/svg"><rect width="16" height="10" fill="#fff"/><rect y="5" width="16" height="5" fill="#dc143c"/></svg>
