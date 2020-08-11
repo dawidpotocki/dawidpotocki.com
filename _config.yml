@@ -23,10 +23,6 @@ exclude:
   - tailwind.config.js
   - yarn.lock
 
-plugins:
-  - jekyll-postcss
-  - jekyll-paginate-v2
-
 permalink: pretty
 pagination:
   enabled: true
