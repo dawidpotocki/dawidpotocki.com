@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "scripts": {
     "build": "JEKYLL_ENV=production NODE_ENV=production bundle exec jekyll build",
-    "build-dev": "bundle exec jekyll serve --livereload --incremental"
+    "build-dev": "bundle exec jekyll serve --livereload --incremental --host=0.0.0.0"
   },
   "author": "Dawid Potocki <dawid@dawidpotocki.com>",
   "license": "ISC",
