@@ -12,17 +12,6 @@ personal_mail:
   - ".&#99;&#111;&#109;"
 
 
-include:
-  - .well-known
-
-exclude:
-  - README.md
-  - package-lock.json
-  - package.json
-  - postcss.config.js
-  - tailwind.config.js
-  - yarn.lock
-
 permalink: pretty
 pagination:
   enabled: true
@@ -36,6 +25,24 @@ pagination:
   sort_reverse: true
   category: "posts"
 
+
+include:
+  - .well-known
+
+exclude:
+  - README.md
+  - package-lock.json
+  - package.json
+  - postcss.config.js
+  - tailwind.config.js
+  - yarn.lock
+
 sass:
   style: compressed
   sass_dir: ./assets/css
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/img/favicon/opengraph-600x600.png
