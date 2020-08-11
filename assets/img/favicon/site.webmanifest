@@ -1,6 +1,8 @@
+---
+---
 {
-    "name": "Dawid Potocki",
-    "short_name": "Dawid Potocki",
+    "name": "{{ site.name }}",
+    "short_name": "{{ site.name }}",
     "icons": [
         {
             "src": "/assets/img/favicon/android-chrome-192x192.png?v=1",
