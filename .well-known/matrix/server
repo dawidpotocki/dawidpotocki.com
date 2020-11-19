@@ -1,0 +1,5 @@
+---
+---
+{
+  "m.server": "{{ site.matrix_domain }}"
+}

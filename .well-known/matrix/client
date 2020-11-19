@@ -1,0 +1,7 @@
+---
+---
+{
+  "m.homeserver": {
+    "base_url": "https://{{ site.matrix_domain }}"
+  }
+}
