@@ -9,9 +9,10 @@
   "license": "ISC",
   "private": true,
   "dependencies": {
-    "postcss": "^7.0.32",
-    "postcss-cli": "^7.1.1",
-    "tailwindcss": "^1.5.2",
-    "typeface-roboto": "^0.0.75"
+    "autoprefixer": "^10.0.2",
+    "fontsource-roboto": "^3.0.3",
+    "postcss": "^8.1.7",
+    "postcss-cli": "^8.3.0",
+    "tailwindcss": "^2.0.1"
   }
 }

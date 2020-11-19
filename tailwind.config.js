@@ -1,25 +1,17 @@
-const { colors } = require("tailwindcss/defaultTheme");
+const colors = require('tailwindcss/colors')
 
 module.exports = {
   purge: ["./_site/**/*.html", "./_site/**/*.js"],
   theme: {
-    fontSize: {
-      xs: ".75rem",
-      sm: ".875rem",
-      base: "1rem",
-      lg: "1.1rem",
-      xl: "1.15rem",
-      "2xl": "1.25rem",
-      "3xl": "1.35rem",
-      "4xl": "1.5rem",
-      "5xl": "2rem",
-      "6xl": "2.5rem",
-      "7xl": "3rem",
-      "8xl": "3.5rem",
-    },
     extend: {
+      fontSize: {
+        "3xl": "1.75rem",
+        "4xl": "2rem",
+      },
       colors: {
+        orange: colors.orange,
         gray: {
+          "50":  "#fafafa",
           "100": "#eeeeee",
           "200": "#cccccc",
           "300": "#aaaaaa",
