@@ -32,7 +32,7 @@ pagination:
   </div>
 
   <div class="sm:flex justify-end mb-10 sm:-mb-4">
-    <a class="btn bg-orange-900 hover:bg-orange-800 rounded-t-none flex justify-center px-6" href="/feed.xml">
+    <a class="btn btn-orange rounded-t-none flex justify-center px-6" href="/feed.xml">
       <img
         src="/assets/img/layout/rss.svg"
         class="inline w-5 mr-2"
@@ -57,14 +57,14 @@ pagination:
   <div class="flex mt-6 lg:mb-6">
     {% if paginator.previous_page %}
       <a
-        class="btn bg-blue-900 hover:bg-blue-800"
+        class="btn btn-blue"
         href="{{ paginator.previous_page_path | prepend: site.baseurl }}">
         &lt; Page {{ paginator.previous_page }}
       </a>
     {% endif %}
     {% if paginator.next_page %}
       <a
-        class="btn bg-blue-900 hover:bg-blue-800 ml-auto"
+        class="btn btn-blue ml-auto"
         href="{{ paginator.next_page_path | prepend: site.baseurl }}">
         Page {{ paginator.next_page }} &gt;
       </a>

@@ -7,7 +7,7 @@
 
 
 body { @apply overflow-x-hidden; }
-a, .a { @apply text-blue-400 cursor-pointer; }
+a, .a { @apply text-blue-700 dark:text-blue-400 cursor-pointer; }
 h1 { @apply text-4xl; }
 h2 { @apply text-3xl; }
 h3 { @apply text-2xl; }
@@ -17,18 +17,14 @@ h6 { @apply font-bold; }
 h1,h2,h3,h4,h5,h6 { @apply font-medium mt-2; }
 table { @apply my-2; }
 th, td { @apply border px-2 py-1; }
-th { @apply bg-gray-800; }
+th { @apply bg-gray-100 dark:bg-gray-800; }
 ul { @apply list-disc ml-4; }
 ol { @apply list-decimal ml-4; }
-code { @apply bg-gray-800; }
-pre { @apply bg-gray-800 border overflow-x-auto p-1; }
+code { @apply bg-gray-100 dark:bg-gray-800; }
+pre { @apply bg-gray-100 dark:bg-gray-800 border overflow-x-auto p-1; }
 
-*, ::before, ::after { @apply border-gray-500; }
-:target { @apply bg-gray-700; }
-
-body {
-  font-family: Roboto, sans-serif, "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-}
+*, ::before, ::after { @apply border-gray-300 dark:border-gray-700; }
+:target { @apply bg-gray-300 dark:bg-gray-700; }
 
 
 /*
@@ -71,10 +67,13 @@ body {
  * Components
  */
 
-.btn { @apply text-gray-100 rounded no-underline select-none px-3 py-1; }
-.card { @apply bg-gray-700 rounded p-4; }
+.btn { @apply text-white rounded no-underline select-none px-3 py-1 transition duration-100 ease-in-out; }
+.btn-gray { @apply bg-gray-300 hover:bg-gray-400 dark:bg-gray-700 dark:hover:bg-gray-600 text-black dark:text-white  }
+.btn-blue { @apply bg-blue-500 hover:bg-blue-600 dark:bg-blue-800 dark:hover:bg-blue-700; }
+.btn-orange { @apply bg-orange-500 hover:bg-orange-600 dark:bg-orange-800 dark:hover:bg-orange-700; }
+.card { @apply bg-gray-200 dark:bg-gray-800 rounded p-4; }
 .nav-link {
-  @apply text-gray-100 no-underline select-none whitespace-nowrap mx-0 my-1;
+  @apply text-gray-900 dark:text-gray-100 no-underline select-none whitespace-nowrap mx-0 my-1;
   @screen md { @apply mx-2; }
 }
 
@@ -84,4 +83,4 @@ body {
  */
 
 @tailwind utilities;
-.text-muted { @apply text-gray-300; }
+.text-muted { @apply text-gray-600 dark:text-gray-300; }

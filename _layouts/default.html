@@ -16,9 +16,9 @@
     {% seo %}
   </head>
 
-  <body class="bg-gray-900 text-gray-100 h-full">
+  <body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 h-full">
     {% include nav.html %}
-    <div id="container" class="p-6 max-w-5xl mx-auto">
+    <div id="container" class="p-6 pt-2 max-w-5xl mx-auto">
       <main id="main" class="max-w-5xl">
         {% if page.title %}
           <h1 class="-mt-2">{{ page.title }}</h1>
@@ -30,7 +30,7 @@
 
     <div
       id="clipboard"
-      class="bg-gray-700 rounded-lg shadow-lg invisible opacity-0 fixed p-3 m-6 bottom-0 right-0 transition duration-700">
+      class="bg-gray-300 dark:bg-gray-700 rounded-lg shadow-lg invisible opacity-0 fixed p-3 m-6 bottom-0 right-0 transition duration-700">
       Copied to clipboard!
     </div>
 

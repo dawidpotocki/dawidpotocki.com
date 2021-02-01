@@ -1,8 +1,13 @@
 const colors = require('tailwindcss/colors')
 
 module.exports = {
+  darkMode: 'media',
   purge: ["./_site/**/*.html", "./_site/**/*.js"],
   theme: {
+    fontFamily: {
+      "sans": ["Roboto", "sans-serif", "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"],
+      "mono": ["DejaVu Sans Mono", "monospace"],
+    },
     extend: {
       fontSize: {
         "3xl": "1.75rem",
@@ -11,15 +16,9 @@ module.exports = {
       colors: {
         orange: colors.orange,
         gray: {
-          "50":  "#fafafa",
-          "100": "#eeeeee",
-          "200": "#cccccc",
-          "300": "#aaaaaa",
-          "400": "#717385",
-          "500": "#4e4f5a",
-          "600": "#3f414d",
-          "700": "#2c2c38",
-          "800": "#1a1f24",
+          "600": "#4e4f5a",
+          "700": "#3f414d",
+          "800": "#2c2c38",
           "900": "#15191e",
         },
       },
