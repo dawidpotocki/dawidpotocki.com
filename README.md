@@ -38,4 +38,4 @@ $ npm run build      # Production
 
 ## License
 
-Project is licensed under [ISC License](./LICENSE), unless specified otherwise.
+Project is licensed under [BSD-2-Clause](./LICENSE), unless specified otherwise.

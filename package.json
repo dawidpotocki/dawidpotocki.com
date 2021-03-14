@@ -6,7 +6,7 @@
     "build-dev": "bundle exec jekyll serve --livereload --incremental --host=0.0.0.0"
   },
   "author": "Dawid Potocki <dawid@dawidpotocki.com>",
-  "license": "ISC",
+  "license": "BSD-2-Clause",
   "private": true,
   "dependencies": {
     "autoprefixer": "^10.0.2",
