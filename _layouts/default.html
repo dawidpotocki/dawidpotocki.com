@@ -20,8 +20,12 @@
     {% include nav.html %}
     <div id="container" class="p-6 pt-2 max-w-5xl mx-auto">
       <main id="main" class="max-w-5xl">
-        {% if page.title %}
-          <h1 class="-mt-2">{{ page.title }}</h1>
+        {% if page.header != "false" %}
+          {% if page.header %}
+            <h1 class="-mt-2">{{ page.header }}</h1>
+          {% elsif page.title %}
+            <h1 class="-mt-2">{{ page.title }}</h1>
+          {% endif %}
         {% endif %}
         {{ content }}
       </main>
