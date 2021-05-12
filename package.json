@@ -11,7 +11,7 @@
   "dependencies": {
     "autoprefixer": "^10.0.2",
     "fontsource-roboto": "^3.0.3",
-    "postcss": "^8.1.7",
+    "postcss": "^8.2.10",
     "postcss-cli": "^8.3.0",
     "tailwindcss": "^2.0.1"
   }
